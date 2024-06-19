@@ -1,0 +1,163 @@
+{
+  "main": {
+    "id": "46a6d641fab29220",
+    "type": "split",
+    "children": [
+      {
+        "id": "2a596eb215ac6291",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f0cfa646049567bc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OOPS Revision note.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "de7e3d61ec505ce6",
+    "type": "split",
+    "children": [
+      {
+        "id": "1dcffc6c4b374597",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "326225b1addb8e93",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f27bbd609b69e518",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "bc2b7f35ea4a2564",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "93090d021b399efa",
+    "type": "split",
+    "children": [
+      {
+        "id": "7a148d553ebaa3ba",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ecdda1f9c349fc7b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "OOPS Revision note.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "578e5acf1b5dbd7c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "OOPS Revision note.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "195a22471caad9aa",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "48059283f6258801",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "OOPS Revision note.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "f0cfa646049567bc",
+  "lastOpenFiles": [
+    "hybrid.PNG",
+    "image.png",
+    "OOPS Revision note.md",
+    "2024-06-19.md",
+    "Untitled.canvas",
+    "2024-06-06.md",
+    "create a link.md",
+    "Untitled 2.canvas",
+    "Untitled 1.canvas",
+    "Welcome.md",
+    "This is my first note.md"
+  ]
+}

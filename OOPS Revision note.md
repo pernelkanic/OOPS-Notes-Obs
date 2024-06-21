@@ -229,6 +229,102 @@ That is all i can say abt innerclasses.
  - To explain this let us take a simple analogy ,if i have to drive a car all i need is a key , i dont need to know abt what the engine is , what horsepower it has , all i need is the key.
  - likewise , in **Abstraction** we dont care abt what that class contains ,all i need are the  methods to manipulate my data using this class. for example , System.out.println() where by we dont care how the println() fn is implemented , all i need is the way to use like ```println()``` that is abstraction , hiding away unnecessary details and showing only methods to manipulate it.
  - Encapsulation is basically wrapping up all the implementation level stuff. that is it . Both abstraction and encapsulation may look the same , but they are interrelated in way encapsulation is used to wrap up the big pile of code inside a class and abstraction is a way to show the clients how to use that wrapped up class methods to manipulate their data.
+---
+# Abstract Classes
+- The classes which are declared with the abstract keyword are called abstract classes , 
+- In the abstract Classes we declare the function alone and the body can be implemented in the children class inheriting the abstract class.
+- if any of the fields inside the class is declared abstract , then the class has to be abstract.
+- we cannot create objects of the abstract classes, why due to security reasons , whereby if a abstract method which is not implemented is called using that object,what output would java provide , so objects of abstract classes cannot be created.
+- Let us take an example to see how these work
 
-  
+  ```
+	public class AbstactClassesExample {
+
+		public static void main(String[] args) {
+			parent ch = new child(2);//abstract parent class can be referenced , but the one in the child class (right side) will be called.
+			ch.identify(); // op - Hey im son
+			
+
+		}
+
+	}
+	abstract class parent{
+		final int val;
+		parent(int val ){
+			this.val = val;
+		}
+		static void greet() { //works
+			System.out.println("hello from a static methods"); 
+		}
+		abstract void identify();
+	}
+
+	class child extends parent{
+		child(int val){
+			super(val);
+		}
+		@Override
+		void identify() {
+			System.out.println("Hey im son");
+			
+		}
+		
+	}
+
+  ```
  
+ ## Can we use abstract static methods
+  - NO ,  because abstract methods needs to be overridden but static methods cannot be overridden so we can't use abstact static methods , 
+  - but we can create normal static methods inside abstract classes
+---
+# Interfaces
+- similar to abstract classes , we have to do the fn declaration here , but body of the function cannot be implemented in the interface.
+
+- We can do Multiple Inheritance here , why ? , we can implement any number of interfaces we want and the body of the functions in the interfaces has to be implemented in the child class only, so even if 2 interfaces has the same method , the body for it is implemented in the child.
+
+- Even two dissimilar interfaces can be implemented , having no connection to each other , there is no heirarchy in the world of interfaces.
+
+- In a interface we can extend another interface as well.
+
+- The access modifier of the implemented method must be equal or better than the one declared in interface , if the interface has  a method protected , then the one implementing has to have protected or public.
+
+- By Default, In the interfaces all the methods and variables are declared static and final.
+
+- if we have a situation where we have to implement a method body in the interface , we use ```default``` keyword before the function to write the function body in the interface.
+- There is concept of Nested Interfaces, which almost is same as nested class and nested can be protected , private or public , but the top level interface must be public.
+- Let us take a example:
+```
+//Interface
+public interface exampleInterface {
+	 void greet();
+	void saymyName();
+	
+	int val  =5 ;
+}
+
+//implemented class
+
+public class InterfaceMain implements exampleInterface {
+
+	public static void main(String[] args) {
+		InterfaceMain main = new InterfaceMain();
+		main.greet();
+		main.saymyName();
+
+	}
+
+	@Override
+	public void greet() {
+		System.out.println("helo from interface class");
+		
+	}
+
+	@Override
+	public void saymyName() {
+		System.out.println("Now Say my name");
+		
+	}
+
+}
+
+```
